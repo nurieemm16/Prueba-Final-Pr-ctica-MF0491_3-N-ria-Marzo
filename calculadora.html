@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Nutricional</title>
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+    <div class="calculadora">
+        <h1>Calculadora Nutricional</h1>
+        <div class="tabla">
+            <label for="food">Alimento:</label>
+            <select id="food">
+                <option value="fresa">Fresa</option>
+                <option value="mango">Mango</option>
+                <option value="bistec">Bistec de ternera</option>
+                <option value="merluza">Merluza</option>
+            </select>
+        </div>
+        <div class="tabla">
+            <label for="cantidad">Cantidad (g):</label>
+            <input type="number" id="cantidad" min="0" value="100">
+        </div>
+        <button onclick="calcularNutricion()">Calcular</button>
+        <div id="resultado" class="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
